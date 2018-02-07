@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src = "script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="my-4">
+                <span id="space"></span>
+                Customer Name
+                <input id="customer" type="text" name="name" required />
+            </div>
+
+            <div class="my-4">
+                <h2>Beverage Selector</h2>
+                Beverage
+                <select id="selector">
+                    <option value="0">Tea</option>
+                    <option value="1">Coffee</option>
+                    <option value="2">Soda</option>
+                    <option value="3">Beer</option>
+                    <option value="4">Wine</option>
+                </select>
+                <span></span>
+                <input id="sizeBtn" type="radio" name="size" value="0">Small
+                <input id="sizeBtn" type="radio" name="size" value="1">Medium
+                <input id="sizeBtn" type="radio" name="size" value="2">Large
+                <span></span>
+                Quantity
+                <input id="numBox" type="number" name="quantity" required/>
+            </div>
+            <div id="age" class="my-4">
+                Birth Date
+                <input id="date" type="date" name="birthDate"/>
+            </div>
+            <div id="btn">
+                <button type="button" id="orderBtn" class="btn-info" onclick="createOrder()">Order</button>
+            </div>
+            <div id="output"><div id="receipt" class="my-4"></div></div>
+        </form>
+
+    </div>
+</body>
+
+</html>
